@@ -18,9 +18,10 @@
 } */
 
 function reverse(str) {
-    const arr = str.split('');
+/*     const arr = str.split('');
     arr.reverse();
-    return arr.join('')
+    return arr.join('') */
+    return str.split('').reverse().join('');
 }
 
 module.exports = reverse;
