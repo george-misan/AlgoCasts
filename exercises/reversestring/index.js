@@ -26,12 +26,18 @@ function reverse(str) {
  /*    --- SOLUTION ONE [CLEAN-UP] --- */
 /*     return str.split('').reverse().join(''); */
 
-let reverse = '';
+
+ /*    --- SOLUTION TWO --- */
+/* let reverse = '';
 for (char of str) {
     reverse = char + reverse;
 }
 
-return reverse;
+return reverse; */
+return str.split('').reduce((accumulator, currentValue) => {
+    return currentValue + accumulator
+}, '');
+
 }
 
 module.exports = reverse;
