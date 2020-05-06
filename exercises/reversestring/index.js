@@ -18,10 +18,20 @@
 } */
 
 function reverse(str) {
+ /*    --- SOLUTION ONE --- */
 /*     const arr = str.split('');
     arr.reverse();
     return arr.join('') */
-    return str.split('').reverse().join('');
+
+ /*    --- SOLUTION ONE [CLEAN-UP] --- */
+/*     return str.split('').reverse().join(''); */
+
+let reverse = '';
+for (char of str) {
+    reverse = char + reverse;
+}
+
+return reverse;
 }
 
 module.exports = reverse;
