@@ -18,6 +18,7 @@
 } */
 
 function reverse(str) {
+    
  /*    --- SOLUTION ONE --- */
 /*     const arr = str.split('');
     arr.reverse();
@@ -34,11 +35,11 @@ for (char of str) {
 }
 
 return reverse; */
-return str.split('').reduce((accumulator, currentValue) => {
-    return currentValue + accumulator
-}, '');
+return str.split('').reduce((accumulator, currentValue) => currentValue + accumulator, '');
 
 }
+
+reverse('misan')
 
 module.exports = reverse;
 
